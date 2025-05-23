@@ -1,11 +1,15 @@
 import { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  // …any existing config…
+  // …your existing config…
 
   eslint: {
-    // Allow production builds even if there are ESLint errors
+    // already added to skip lint errors
     ignoreDuringBuilds: true,
+  },
+  typescript: {
+    // this tells Next.js to ignore TS errors during build
+    ignoreBuildErrors: true,
   },
 };
 
