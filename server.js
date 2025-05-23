@@ -39,7 +39,7 @@ async function initDb() {
     driver: sqlite3.Database,
   });
 
-  // Create users table (if it doesn't exist) with bettingAmount included. Test
+  // Create users table (if it doesn't exist) with bettingAmount included.
   await db.run(`CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     username TEXT UNIQUE,
