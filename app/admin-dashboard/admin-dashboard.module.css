@@ -1,0 +1,140 @@
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+    text-align: center;
+    color: green;
+    margin-bottom: 1rem;
+}
+
+.form {
+    width: 100%;
+}
+
+.formGroup {
+    margin-bottom: 1rem;
+}
+
+    .formGroup label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        color: #555;
+    }
+
+    .formGroup input[type="text"],
+    .formGroup input[type="date"],
+    .formGroup input[type="time"],
+    .formGroup input[type="number"],
+    .formGroup textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+
+    .formGroup textarea {
+        resize: vertical;
+        min-height: 80px;
+    }
+
+.checkboxGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.checkboxItem {
+    display: flex;
+    align-items: center;
+}
+
+    .checkboxItem input {
+        margin-right: 0.5rem;
+    }
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+    .table th,
+    .table td {
+        padding: 0.75rem;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    .table th {
+        background-color: #0070f3;
+        color: #fff;
+    }
+
+    .table input[type="number"],
+    .table input[type="text"] {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+    .button:hover {
+        background-color: #005bb5;
+    }
+
+/* New styling for moneyline input fields in the Update Moneylines section */
+.moneylineInput {
+    width: 80px;
+    padding: 0.25rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* New styling for bet adjustment input fields in the Manage Bets section */
+.betAdjustmentInput {
+    width: 100px;
+    padding: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-align: center;
+}

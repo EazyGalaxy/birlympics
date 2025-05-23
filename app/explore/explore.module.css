@@ -1,0 +1,67 @@
+.exploreContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.pageTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.newPhotosLabel {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.postsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.postHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.userFlag {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.postImage {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    image-rendering: auto; /* Ensures smoother scaling */
+}
+
+.loadingText {
+    text-align: center;
+    margin-top: 10px;
+}

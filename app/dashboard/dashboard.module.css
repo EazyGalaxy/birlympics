@@ -1,0 +1,125 @@
+.dashboardContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fdfdfd;
+    font-family: Arial, sans-serif;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* Weather Section */
+.weatherSection {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #e0f7fa;
+    border-radius: 8px;
+}
+
+.weatherCards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.weatherCard {
+    background: #fff;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    text-align: center;
+}
+
+.weatherDate {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.weatherIcon {
+    width: 80px;
+    height: 80px;
+}
+
+.weatherDesc {
+    text-transform: capitalize;
+    margin: 0.5rem 0;
+}
+
+.weatherTemp {
+    font-weight: bold;
+}
+
+/* Events Section */
+.eventsSection {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f1f8e9;
+    border-radius: 8px;
+}
+
+.eventsList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.eventCard {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.eventTitle {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #00796b;
+}
+
+.eventTime,
+.eventDate,
+.eventParticipants {
+    margin: 0.25rem 0;
+    color: #555;
+}
+
+/* Results Section */
+.resultsSection {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #fff3e0;
+    border-radius: 8px;
+}
+
+.resultsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.resultCard {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.resultEvent {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #bf360c;
+}
+
+.resultAthlete {
+    color: #555;
+}

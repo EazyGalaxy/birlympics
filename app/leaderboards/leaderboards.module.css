@@ -1,0 +1,111 @@
+.pageContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.sectionContainer {
+    margin-bottom: 2rem;
+}
+
+.box {
+    border: 2px solid black;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* Podium container */
+.podium {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 16px;
+    margin: 1rem auto;
+}
+
+/* Each podium column */
+.podiumColumn {
+    position: relative;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    overflow: visible;
+}
+
+/* Different heights for podium columns */
+.firstPlace {
+    background: #6cd0c4;
+    height: 150px;
+}
+
+.secondPlace {
+    background: #f9d371;
+    height: 120px;
+}
+
+.thirdPlace {
+    background: #f2716e;
+    height: 100px;
+}
+
+/* Position number styling (placed at the top of each column) */
+.positionNumber {
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Podium name overlay, positioned above the pillar */
+.podiumName {
+    position: absolute;
+    top: -20px; /* Adjust this value until names appear on top of the pillars */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9rem;
+    color: black;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Inline flag styling: a small rectangle next to the name */
+.inlineFlag {
+    margin-left: 0.5rem;
+    width: 24px;
+    height: 14px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+
+/* Table for remaining users */
+.leaderboardTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+    .leaderboardTable th,
+    .leaderboardTable td {
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        text-align: left;
+    }
+
+    .leaderboardTable th {
+        background-color: #f5f5f5;
+    }
+
+.podiumMetric {
+    margin-top: 4rem; /* Increase this value as needed to move the number down */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+

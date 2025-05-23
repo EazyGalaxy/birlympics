@@ -1,0 +1,19 @@
+.container {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.inputGroup {
+    margin-bottom: 1rem;
+}
+
+.error {
+    color: red;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+}

@@ -1,0 +1,157 @@
+.scheduleContainer {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+    border-radius: 8px;
+}
+
+.scheduleTitle {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Container for all months, stacked vertically */
+.calendar {
+    display: block;
+}
+
+/* Each month block spans full width */
+.monthBlock {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+    .monthBlock h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+/* Days are arranged in a 7-column grid */
+.daysGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5rem;
+}
+
+/* Each day cell is a box in the grid */
+.dayCell {
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    min-height: 80px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.5rem;
+}
+
+    .dayCell:hover {
+        background-color: #f5f5f5;
+    }
+
+.dayNumber {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    font-size: 1.1rem;
+}
+
+/* If a day has events, highlight it */
+.eventDay {
+    background-color: #e0f7fa;
+}
+
+/* Where the events are previewed at the bottom of the cell */
+.eventPreview {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eventInfo {
+    font-size: 0.75rem;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 0.25rem;
+}
+
+.eventName {
+    font-weight: bold;
+}
+
+.eventTime {
+    color: #999;
+    margin-left: 0.5rem;
+}
+
+/* Modal overlay */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+/* Modal content box */
+.modalContent {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+    .modalContent h3 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+.eventDetails {
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+/* Close button for the modal */
+.closeButton {
+    background: #0070f3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+}
+
+    .closeButton:hover {
+        background-color: #005bb5;
+    }
