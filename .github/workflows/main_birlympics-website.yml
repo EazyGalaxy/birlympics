@@ -31,7 +31,8 @@ jobs:
             public \
             server.js \
             package.json \
-            next.config.ts
+            next.config.ts \
+            node_modules
 
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
