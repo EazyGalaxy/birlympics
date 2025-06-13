@@ -68,8 +68,13 @@ async function initDb() {
     time TEXT,
     participants TEXT,
     moneyLine1 REAL,
-    moneyLine2 REAL
+    moneyLine2 REAL,
+    moneyLine3 REAL,
+    moneyLine4 REAL
   )`);
+
+  try { await db.run("ALTER TABLE events ADD COLUMN moneyLine3 REAL"); } catch(_) {}
+  try { await db.run("ALTER TABLE events ADD COLUMN moneyLine4 REAL"); } catch(_) {}
 
   // Create bets table
   await db.run(`CREATE TABLE IF NOT EXISTS bets (
